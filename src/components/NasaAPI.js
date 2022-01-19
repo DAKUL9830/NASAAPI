@@ -2,7 +2,7 @@
 import React,{useState,useEffect} from 'react'
 import logo from '../logo.svg';
 
-
+const apiKey=process.env.REACT_APP_NASA_KEY;
 
 function Like() {
     let initialValue=0;
@@ -41,10 +41,10 @@ function NasaAPI() {
         async function fetchPost(){
             const res=await fetch(
                 //API WITH ONE IMAGE
-                //'https://api.nasa.gov/planetary/apod?api_key=Ilhz7aqcHFPlCAGsfJL6J7tE0vNvvluNMAKmonI7'
+                //`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`
 
                 //API WITH TWO OR MORE IMAGES
-                'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=Ilhz7aqcHFPlCAGsfJL6J7tE0vNvvluNMAKmonI7'
+                `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=${apiKey}`
                
              
             );
