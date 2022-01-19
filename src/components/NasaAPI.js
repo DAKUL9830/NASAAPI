@@ -44,7 +44,7 @@ function NasaAPI() {
                 //'https://api.nasa.gov/planetary/apod?api_key=Ilhz7aqcHFPlCAGsfJL6J7tE0vNvvluNMAKmonI7'
 
                 //API WITH TWO OR MORE IMAGES
-                'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=DEMO_KEY'
+                'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=Ilhz7aqcHFPlCAGsfJL6J7tE0vNvvluNMAKmonI7'
                
              
             );
